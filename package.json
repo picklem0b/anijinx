@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "turbo build",
-    "dev": "turbo dev",
+    "dev": "turbo dev --ui=stream",
     "lint": "turbo lint",
     "format": "turbo format",
     "typecheck": "turbo typecheck"
@@ -20,10 +20,13 @@
     "node": ">=20"
   },
   "workspaces": [
-    "apps/*",
+    "apps",
+    "web",
+    "mobile",
     "packages/*"
   ],
   "dependencies": {
-    "framer-motion": "^13.4.6"
+    "framer-motion": "^13.4.6",
+    "zustand": "^5.0.15"
   }
 }
