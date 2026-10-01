@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "AniJinx",
+    "slug": "anijinx",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "anijinx",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0B0B0F",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.anijinx.mobile"
+    },
+    "android": {
+      "package": "app.anijinx.mobile",
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-video",
+        {
+          "supportsPictureInPicture": true
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0B0B0F",
+          "image": "./assets/hope.png",
+          "imageWidth": 120
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
